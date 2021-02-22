@@ -1,0 +1,71 @@
+/** @autor iago**/
+/* layout 
+---------*/
+
+#digidoc{
+    text-align: justify;
+}
+
+#digidoc img {
+    position: relative;
+    margin-top: 0; 
+}
+
+#quemsomos{
+    border: 20px 20px;
+    padding: 15px 15px ;
+    text-align: center;
+}
+
+#cartoes{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.display-5 {
+    text-align: center;
+}
+
+/**Footer **/
+
+footer{
+    background:rgb(233, 233, 233);
+    padding: 15px 50px 15px 50px;
+    height: 100%;
+    text-align: center;
+    margin-top: auto;   
+}
+.footer-copyright{
+    color: #a1a4a7;
+}
+
+#col-md-4 {
+ 
+ position: absolute;    
+}
+
+body{
+    background: #eee;
+}
+span{
+    font-size:15px;
+}
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#2eb2fe;
+}
+
