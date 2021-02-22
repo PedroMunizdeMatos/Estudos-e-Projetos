@@ -1,2 +1,3 @@
 # Estudos e Projetos
- Meus estudos
+ Meus estudos e Projetos pessoais
+ 
