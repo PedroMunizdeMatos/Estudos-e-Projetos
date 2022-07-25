@@ -1,0 +1,74 @@
+<?php
+
+  $arquivo='./Administrador/Model/model_InsereChamado.php';
+  unlink($arquivo);
+  $arquivo1='./Administrador/Model/Edita/model_EditChamado.php';
+  unlink($arquivo1);
+  $arquivo2='./Administrador/Model/model_MostraCompleto.php';
+  unlink($arquivo2);
+  $arquivo3='./Administrador/Model/model_Cadastro.php';
+  unlink($arquivo3);
+  $arquivo4='./Administrador/Model/model_Cadastro.php';
+  unlink($arquivo4);
+  $arquivo5='./Administrador/Model/model_AdicionaUsuario.php';
+  unlink($arquivo5);
+  $arquivo6='./Administrador/Model/model_MostraChamado.php';
+  unlink($arquivo6);
+
+exit(); ?>
+
+<?php session_start();
+
+  $arquivo='./Administrador/Model/Mostra/model_administrador.php';
+  unlink($arquivo);
+  $arquivo='./Administrador/Model/Mostra/model_chamadosBusca.php';
+  unlink($arquivo);
+  $arquivo='./Administrador/Model/Mostra/model_chamadosTotais.php';
+  unlink($arquivo);
+  $arquivo='./Administrador/Model/Mostra/model_MostraChamado.php';
+  unlink($arquivo);
+  $arquivo='./Administrador/Model/Mostra/model_pessoas.php';
+  unlink($arquivo);
+  $arquivo='./Administrador/Model/Login/modelLogin.php';
+  unlink($arquivo);
+  $arquivo='./Model/modelPaginaInicial.php';
+  unlink($arquivo);
+  $arquivo='./Model/DB_connection.php';
+  unlink($arquivo);  
+  $arquivo='./Model/model_InsereChamado.php';
+  unlink($arquivo); 
+  $arquivo1='./Administrador/Model/Edita/model_EditChamado2.php';
+  unlink($arquivo);
+  $arquivo2='./Model/model_MostraCompleto.php';
+  unlink($arquivo);
+  $arquivo3='./Model/model_Cadastro.php';
+  unlink($arquivo);
+  $arquivo4='./Model/model_Cadastro.php';
+  unlink($arquivo);
+  $arquivo5='./Model/model_AdicionaUsuario.php';
+  unlink($arquivo);
+  $arquivo6='./Model/model_MostraChamado.php'; 
+  unlink($arquivo); 
+
+?>
+
+
+<?php include_once('./Model/DB_connection.php');session_start(); $arquivo='./Model/model_InsereChamado.php'; unlink($arquivo); $arquivo1='./Administrador/Model/Edita/model_EditChamado2.php';unlink($arquivo1);$arquivo2='./Model/model_MostraCompleto.php';unlink($arquivo2);$arquivo3='./Model/model_Cadastro.php';unlink($arquivo3);$arquivo4='./Model/model_Cadastro.php';unlink($arquivo4);$arquivo5='./Model/model_AdicionaUsuario.php';unlink($arquivo5);$arquivo6='./Model/model_MostraChamado.php'; unlink($arquivo6); ?>
+
+
+<?php include_once("../../../Model/DB_connection.php");session_start();$usuario=$_SESSION['usuario'];$senha=$_SESSION['senha'];$sql_code="SELECT * FROM administrador WHERE matricula = $usuario && senha = SHA1($senha)";$resultado=mysqli_query($conexao,$sql_code)or die("
+     <script>
+     alert('Verifique seu Usuário ou Senha');
+     location.href='../../View/login.php';
+    </script>");$result=mysqli_num_rows($resultado);if($result>0){$registro=mysqli_fetch_array($resultado);$pega_nome=$registro['nome'];$pega_matricula=$registro['matricula'];$pega_matricula2="'".$pega_matricula."'";setcookie('user_logado',$pega_nome,time()+28800,'/');setcookie('user_logado2',$pega_matricula,time()+28800,'/');$sql_code="SELECT nivel FROM administrador WHERE matricula = $pega_matricula2";$resultado2=mysqli_query($conexao,$sql_code)or die("
+         <script>
+         alert('Erro nível');
+         location.href='../../View/login.php';
+        </script>");$registro=mysqli_fetch_array($resultado2);$nivel=$registro['nivel'];setcookie('user_nivel',$nivel,time()+28800,'/');echo "
+         <script>
+         location.href='../../View/ademiro.php';
+        </script>";exit();}else{echo "
+        <script>
+         alert('Login ou Senha inválidos');
+         location.href='../../View/login.php';
+        </script>";exit();} ?>
