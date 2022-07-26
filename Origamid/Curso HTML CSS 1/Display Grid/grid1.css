@@ -1,0 +1,33 @@
+body{
+  font-family: Arial;
+}
+
+h1{
+  text-align: center;
+}
+
+.buy{
+  background-color: #a8f;
+  color: #103;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.item{
+  background-color: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 20px;
+  display: grid;
+}
+
+.grid{
+  display: grid;
+  height: 600px;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-content: center;
+  place-content: center;
+  /* place-content: center; = align + justify */
+}
