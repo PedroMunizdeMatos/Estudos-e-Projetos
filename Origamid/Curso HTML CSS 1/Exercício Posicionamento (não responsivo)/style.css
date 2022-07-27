@@ -2,6 +2,7 @@
 body {
   font-family: arial, sans-serif, Helvetica;
   margin: 0px;
+  margin-top: 60px;
   background: #f7f7f7;
   align-content: center;
   display: grid;
@@ -94,3 +95,21 @@ p, h1, h3 {
   background: #ffffff;
   padding: 40px;
 }
+ .benefits-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+ }
+
+ .benefits-item p {
+  grid-column: 2;
+ }
+
+ .footer {
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+ }
