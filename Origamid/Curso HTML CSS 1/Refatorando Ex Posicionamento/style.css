@@ -1,0 +1,178 @@
+/* Comun style */
+body {
+  font-family: arial, sans-serif, Helvetica;
+  margin: 0px;
+  margin-top: 7.5rem;
+  background: #f7f7f7;
+  align-content: center;
+  display: grid;
+  gap: 7.5rem;
+  justify-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p, h1, h3 {
+  margin: 0rem;
+}
+
+ul, li {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+/* Especific style */
+
+.menu {
+  list-style-type: none;
+  margin: 0rem;
+  padding: 0rem;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  padding: 1.875rem 3.75rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 1s;
+  font-weight: bold;
+}
+
+.menu a:hover{
+  transition: 0s;
+  outline: auto;
+  outline-color: #900;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
+}
+
+.intro {
+  background: #fff;
+  padding: 5rem;
+  text-align: center;
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  align-content: center;
+  justify-items: center;
+}
+
+.intro a {
+  background: #ee2211;
+  color: #f7f7f7;
+  padding: 1.25rem 1.875rem;
+  border-radius: 0.5rem;
+}
+
+.intro a:hover {
+  outline: auto;
+  outline-color: #ee2211;
+  background: #900;
+  transition: 0.3s;
+}
+
+
+.intro h1::before{
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.5rem;
+  background-color: #ee2211;
+  z-index: 1;
+  position: absolute;
+  top: 3rem;
+  right: -3rem;
+}
+
+.icon {
+  color: #ee2211;
+}
+
+.light-benefit {
+  color: #c6c6c6;
+  font-size: 8rem;
+  font-weight: bold;
+  padding: 5rem;
+  align-self: center;
+  background-image: url(./img/onda.svg);
+}
+
+.benefits {
+  background: #ffffff;
+  padding: 5rem;
+}
+.benefits-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem 2.5rem;
+  padding: 2.5rem;
+  z-index: 2;
+  border-left: 0.3rem solid transparent;
+ }
+
+.benefits-item p {
+  grid-column: 2;
+ }
+
+.benefits .benefits-item:nth-child(odd) {
+  background: #f7f7f7;
+ }
+
+.benefits-item:hover {
+  transition: 0.1s;
+  border-left: 0.3rem solid #ee2211;
+}
+
+footer {
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2.5rem;
+ }
+
+header {
+  display: grid;
+  justify-items: center;
+  gap: 7.5rem;
+ }
+ 
+ @media (max-width: 70rem) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .intro h1::before{
+    background-color: transparent;
+  }
+ }
