@@ -1,7 +1,7 @@
 /* Comun style */
 body {
   font-family: arial, sans-serif, Helvetica;
-  margin: 0px;
+  margin: 0 auto;
   margin-top: 7.5rem;
   background: #f7f7f7;
   align-content: center;
@@ -102,7 +102,6 @@ ul, li {
   transition: 0.3s;
 }
 
-
 .intro h1::before{
   content: "";
   display: block;
@@ -132,6 +131,7 @@ ul, li {
   background: #ffffff;
   padding: 5rem;
 }
+
 .benefits-item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -168,11 +168,34 @@ header {
   gap: 7.5rem;
  }
  
- @media (max-width: 70rem) {
-  .content {
+
+.intro-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+ @media (max-width: 1440px) {
+  .content-benefit {
     grid-template-columns: 1fr;
   }
+
   .intro h1::before{
-    background-color: transparent;
+    display: none;
+  }
+ }
+
+ @media (max-width: 1100px){
+  .content-intro {
+    grid-template-columns: 1fr;
+  }
+  body {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  header {
+    gap: 30px;
+  }
+  .light-benefit{
+  font-size: 6rem;
   }
  }
