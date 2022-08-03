@@ -1,0 +1,12 @@
+SELECT COUNT(*) FROM `chamado` (CONTADOR DE CHAMADOS);
+
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 2958;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 55414;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 027286;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 65247;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 060457;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 074398;
+SELECT COUNT(*) FROM `chamado` WHERE administrador = 053823; (número de chamados por adm)
+
+SELECT pessoa, COUNT(*) FROM chamado WHERE pessoa = 2958
+
