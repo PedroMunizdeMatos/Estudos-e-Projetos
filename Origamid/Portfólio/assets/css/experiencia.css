@@ -39,12 +39,13 @@
 
 .empresa-ano {
   position: absolute;
-  left: -100px;
   top: 20px;
+  left: -100px;
   text-align: right;
-  width: 80px;
   color: #525252;
   font-size: 0.875rem;
+  width: 80px;
+
 }
 
 .empresa-titulo {
@@ -54,7 +55,7 @@
 }
 
 .empresa-texto {
-  font-size: 0.857rem;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: #525252;
 }
@@ -72,4 +73,29 @@
   border-radius: 4px;
   background: #ffffff;
   padding: 5px 10px;
+}
+
+@media (max-width:800px){
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width:400px) {
+ .empresa {
+  grid-template-columns: 1fr;
+ }
 }
