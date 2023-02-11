@@ -13,3 +13,4 @@ try {
 }
 
 console.log('após ao try/catch')
+// try catch
