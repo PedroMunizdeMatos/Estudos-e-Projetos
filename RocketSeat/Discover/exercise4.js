@@ -5,6 +5,7 @@
         • Count the number of authors
         • Show books by author Augusto Cury
         • Transform the above function into a function that will receive the author's name and return that author's books.
+        
 */
 
 const booksByCategory = [
