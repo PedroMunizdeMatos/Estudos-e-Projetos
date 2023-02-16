@@ -1,0 +1,23 @@
+
+body {
+  margin: 2rem;
+}
+
+.container {
+  min-height: 80vh;
+  display: flex;
+  gap: 1rem;
+}
+
+aside, main{
+  border: solid 1px #999;
+  border-radius: .5rem;
+}
+
+aside {
+  flex-basis: 25%;
+}
+
+main {
+  flex: 1;
+}
