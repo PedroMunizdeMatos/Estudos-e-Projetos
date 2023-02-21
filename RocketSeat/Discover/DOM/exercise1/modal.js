@@ -1,18 +1,18 @@
-const btn = document.querySelector('button')
-const div = document.querySelector('div')
+const btnOpenModal = document.querySelector('#openModal')
+const modalWrapper = document.querySelector('.modal-wrapper')
 const body = document.querySelector('body')
-const esc = document.querySelector('#esc')
+const scape = document.querySelector('#esc')
 
-function change() {
-  div.classList.toggle('invisible')
+function invisibleToggle() {
+  modalWrapper.classList.toggle('invisible')
 }
 
-btn.addEventListener('click', change)
-esc.addEventListener('click', change)
+btnOpenModal.addEventListener('click', invisibleToggle)
+esc.addEventListener('click', invisibleToggle)
 
 body.onkeydown = function (event) {
   let keyPressed = event.key
   if (keyPressed === 'Escape') {
-    change()
+    invisibleToggle()
   }
 }
