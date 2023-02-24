@@ -6,7 +6,7 @@ const scape = document.querySelector('#esc')
 function invisibleToggle() {
   modalWrapper.classList.toggle('invisible')
 }
-
+//
 btnOpenModal.addEventListener('click', invisibleToggle)
 esc.addEventListener('click', invisibleToggle)
 
